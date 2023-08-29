@@ -2,4 +2,11 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  min-inline-size: 375px;
+  margin: 0;
+  color: var(--text-color, #F1B2CE);
+  font-family: var(--main-font, sans-serif);
+  background-color: var(--bg-color, #000028);
+
 }
+
