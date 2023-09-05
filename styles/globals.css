@@ -1,12 +1,5 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
-:root {
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --main-font: 'IBM Plex Mono'; /*шрифт основного текста*/
-  --accent-font: 'IBM Plex Mono-bold'; /*шрифт заголовка. Как сделать bold?*/
-}
 
 *,
 *::before,
