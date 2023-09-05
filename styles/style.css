@@ -4,10 +4,9 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   min-inline-size: 375px;
   margin: 0;
-  color: var(--text-color, #F1B2CE);
-  font-family: var(--main-font, 'Bold Regular');
+  color: var(--text-color, #f1b2ce);
+  font-family: var(--main-font, "Bold Regular");
   background-color: var(--bg-color, #000028);
-
 }
 
 .heading {
@@ -21,33 +20,47 @@
 }
 
 .header {
-  padding-block-start: 10%; 
-  margin-block-end: 40px; 
+  padding-block-start: 10%;
+  margin-block-end: 40px;
 }
 
 .header__bulb {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  gap: 3px;
+}
+
+.header__bulb::before {
+  content: "rec";
   text-transform: uppercase;
-  color: var(--accent-color, #FF0070);
+  color: var(--accent-color, #ff0070);
   font-size: 18px;
   line-height: 25px;
 }
 
 .header__bulb::after {
-  background: var(--accent-color, #FF0070);
-  border-radius: 50%;
-  filter: drop-shadow(0px 0px 4px #FF0070);
+  content: "";
+  border-top: 1px solid var(--accent-color, #ff0070);
+  border-right: 1px solid var(--accent-color, #ff0070);
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: relative;
+  background-image: url(../images/circl.svg);
 }
 
 /*nav-bar*/
 .header__theme-menu-button {
   background-color: inherit;
   text-transform: lowercase;
-  color: var(--accent-color, #FF0070);
+  color: var(--accent-color, #ff0070);
   border: 0;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid #FF0070;
+  border: 1px solid #ff0070;
 }
 
 .header__theme-menu-item {
@@ -56,32 +69,32 @@
 
 .header__title {
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-  color: #DB00FF;
-  text-shadow: 4px 4px 0px var(--accent-color, #FF0070);
+  color: #db00ff;
+  text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
 }
 
 .header__text {
   color: #000028;
-  background-color: var(--accent-color, #FF0070);
+  background-color: var(--accent-color, #ff0070);
   font-weight: 700;
   margin: 3.8%;
 }
 
 .content__title {
   margin: 7% 0 2.8%;
-  color: var(--accent-color, #FF0070);
+  color: var(--accent-color, #ff0070);
 }
 
 .article__title {
   margin: 2.8% 0;
   color: #000028;
-  background-color: var(--accent-color, #FF0070);
+  background-color: var(--accent-color, #ff0070);
 }
 
 .article__title_subtitle {
   margin: 2.8% 0;
   color: #000028;
-  background-color: var(--accent-color, #FF0070);
+  background-color: var(--accent-color, #ff0070);
   font-weight: 400;
 }
 
@@ -95,7 +108,7 @@
 }
 
 .content__paragraph a {
-  text-shadow: 2px 2px 0px #FF0070;
+  text-shadow: 2px 2px 0px #ff0070;
   text-decoration: none;
 }
 

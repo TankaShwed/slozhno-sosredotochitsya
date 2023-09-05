@@ -8,4 +8,6 @@
   --accent-color: #FF0070;
   --main-font: 'IBM Plex Mono'; /*шрифт основного текста*/
   --accent-font: 'IBM Plex Mono-bold'; /*шрифт заголовка. Как сделать bold?*/
+  --normal-font-size: 18px;
+  
 }
