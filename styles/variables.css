@@ -2,12 +2,11 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root {
+:root { 
   --bg-color: #000028;
+  --title-color: #db00ff;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
-  --main-font: 'IBM Plex Mono'; /*шрифт основного текста*/
-  --accent-font: 'IBM Plex Mono-bold'; /*шрифт заголовка. Как сделать bold?*/
-  --normal-font-size: 18px;
-  
+  --rec: 'rec';
+  --bulb: url(../images/circl.svg);
 }
