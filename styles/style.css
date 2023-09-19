@@ -1,7 +1,8 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* Основные стили проекта */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  margin: 0;
+  padding: 0;
   font-family: "IBM Plex Mono", "Bold Regular";
   font-size: 18px;
   font-weight: 400;
@@ -9,7 +10,10 @@
   color: var(--text-color, #f1b2ce);
   background-color: var(--bg-color, #000028);
   min-inline-size: 375px;
-  margin: 0;
+  background-image: var(--bg-cover, url(../images/cover-image-dark.png));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .content-section {
@@ -19,22 +23,18 @@
 .title-decor {
   font-weight: 700;
   background-color: var(--accent-color, #ff0070);
-  color: #000028;
-  margin: 2.8% 0;
+  color: var(--bg-color, #000028);
 }
 
 .header {
   padding-block-start: 10%;
   margin-block-end: 40px;
   display: grid;
-  grid-template-areas:
-    "rec"
-    "nav"
-    "title"
-    "text"
-    "corner";
+  
   padding-left: 10px;
   padding-right: 10px;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .cover {
@@ -50,16 +50,16 @@
 }
 
 .header__bulb::before {
-  content: var(--rec, 'rec');
+  content: var(--rec, "rec");
   text-transform: uppercase;
   color: var(--accent-color, #ff0070);
   line-height: 25px;
 }
 
 .header__bulb::after {
-  content: '';
-  border-top: 1px solid var(--accent-color, #ff0070);
-  border-right: 1px solid var(--accent-color, #ff0070);
+  content: "";
+  border-top: 1px solid var(--bt-color, #ff0070);
+  border-right: 1px solid var(--bt-color, #ff0070);
   width: 25px;
   height: 25px;
   display: block;
@@ -69,26 +69,33 @@
 
 /*nav-bar*/
 .header__theme-menu {
-  grid-area: nav;
-  justify-self: end;
+  
 }
 
 .header__theme-menu-button {
   background-color: inherit;
   text-transform: lowercase;
-  color: var(--accent-color, #ff0070);
+  color: var(--bt-color, #ff0070);
   border: 0;
   margin: 1px;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
+  border: 1px solid var(--bt-color-shadow, rgba(255, 0, 112, 0.4));
+  margin: 0;
+}
+
+.header__theme-menu-button:focus {
+  /*доделать focus*/
+  border: none;
+  border-bottom: 1px solid var(--bt-color, #ff0070);
   margin: 0;
 }
 
 .header__theme-menu-button:focus-visible {
   border: none;
-  border-bottom: 1px solid rgba(255, 0, 112); /*доделать*/
+  border-bottom: 1px solid rgb(255, 242, 0); /*доделать focus*/
+  margin: 0;
 }
 
 .header__theme-menu-item {
@@ -97,56 +104,85 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid rgba(255, 0, 112);
+  border: 1px solid var(--bt-color-active, rgba(255, 0, 112));
 }
 
 .header__title {
-  grid-area: title;
-  justify-self: center;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   color: var(--title-color, #db00ff);
   text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
+  line-height: 0.825; /*82.5% 95.7px */
 }
 
 .header__text {
-  grid-area: text;
-  justify-self: end;
-  margin: 3.8%;
 }
 
 .header::after {
-  grid-area: corner;
-  justify-self: start;
   content: "";
-  border-left: 1px solid var(--accent-color, #ff0070);
-  border-bottom: 1px solid var(--accent-color, #ff0070);
+  border-left: 1px solid var(--bt-color, #ff0070);
+  border-bottom: 1px solid var(--bt-color, #ff0070);
   width: 25px;
   height: 25px;
 }
 
 /*main*/
+
 .content__title {
-  margin: 7% 0 2.8%;
+  margin: 7% 0 2.8%; /*?*/
   color: var(--accent-color, #ff0070);
 }
 
-/*margin: 2.8% 0; <h4>*/
-
-.title-decor_subtitle {
-  color: var(--text-color, #000028);
+h5.title-decor {
+  color: var(--bg-color, #000028);
   background-color: var(--accent-color, #ff0070);
-  margin: 2.8% 0;
+  margin: 2.8% 0; /*?*/
 }
 
 .content__article:not(:last-of-type) {
   margin-block-end: 2em;
 }
 
-a {
-  text-shadow: 2px 2px 0px #ff0070;
+.text-link {
+  text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
   text-decoration: none;
+}
+
+.text-link:hover {
+  border-bottom: 1px solid var(--text-color, #f1b2ce);
+}
+
+.text-link:focus {
+  border: 1px solid var(--text-color, #f1b2ce);
 }
 
 .content__picture {
   inline-size: 100%;
+}
+
+.footer {
+  height: 100vh;
+  min-height: 668px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5%;
+}
+
+.footer::before {
+  content: "";
+  border-right: 1px solid var(--bt-color, #ff0070);
+  border-top: 1px solid var(--bt-color, #ff0070);
+  width: 25px;
+  height: 25px;
+  justify-self: start;
+}
+
+.footer::after {
+  content: "";
+  border-left: 1px solid var(--bt-color, #ff0070);
+  border-bottom: 1px solid var(--bt-color, #ff0070);
+  width: 25px;
+  height: 25px;
+  justify-self: start;
 }

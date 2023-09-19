@@ -21,6 +21,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -32,6 +33,7 @@ ul {
 picture {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 button,
