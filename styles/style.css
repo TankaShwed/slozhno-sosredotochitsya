@@ -1,7 +1,6 @@
 /* Основные стили проекта */
 
 .page {
-  /*padding: 0;*/
   font-family: "IBM Plex Mono", "Bold Regular";
   font-size: 18px;
   font-weight: 400;
@@ -12,16 +11,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.content-section {
-  padding: 0 4vi;
-}
-
-.title-decor {
-  font-weight: 700;
-  background-color: var(--accent-color, #ff0070);
-  color: var(--bg-color, #000028);
 }
 
 .header {
@@ -44,6 +33,7 @@
   object-fit: cover;
 }
 
+/*лампочка*/
 .header__bulb {
   position: absolute;
   right: 10px;
@@ -83,7 +73,6 @@
   text-transform: lowercase;
   color: var(--bt-color, #ff0070);
   border: 0;
-  /*margin: 1px;*/
 }
 
 .header__theme-menu-button:hover {
@@ -92,7 +81,6 @@
 }
 
 .header__theme-menu-button:focus {
-  /*доделать focus*/
   border: none;
   border-bottom: 1px solid var(--bt-color, #ff0070);
   margin: 0;
@@ -100,7 +88,7 @@
 
 .header__theme-menu-button:focus-visible {
   border: none;
-  border-bottom: 1px solid rgb(255, 242, 0); /*доделать focus*/
+  border-bottom: 1px solid rgb(255, 242, 0);
   margin: 0;
 }
 
@@ -132,10 +120,20 @@
 }
 
 /*main*/
-
 .content__title {
-  margin: 7% 0 2.8%; /*?*/
   color: var(--accent-color, #ff0070);
+  margin-bottom: 20px;
+}
+
+.title-decor {
+  font-weight: 700;
+  background-color: var(--accent-color, #ff0070);
+  color: var(--bg-color, #000028);
+  margin-bottom: 10px;
+}
+
+.content__paragraph{
+  margin-bottom: 20px;
 }
 
 h5.title-decor {
@@ -146,6 +144,11 @@ h5.title-decor {
 
 .content__article:not(:last-of-type) {
   margin-block-end: 2em;
+}
+
+/*боковые отступы секции,может убрать?*/
+.content-section {
+  padding: 0 2.67vi;
 }
 
 .text-link {
