@@ -14,20 +14,14 @@
 }
 
 .header {
-  padding-block-start: 10%;
-  /*padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;*/
-  padding: 10px;
-  margin-block-end: 40px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  justify-content: space-between;
-  align-items: center;
-  /*height: 100vh;*/
-  min-height: 668px;
-  position: relative;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 63px 165px 247px 148px;
+    justify-content: space-between;    
+    justify-items: end;
+    min-height: 668px;
+    height: 100vh;
 }
 
 .cover {
@@ -36,9 +30,9 @@
 
 /*лампочка*/
 .header__bulb {
-  position: absolute;
+  /*position: absolute;
   right: 10px;
-  top: 10px;
+  top: 10px;*/
   display: flex;
   gap: 3px;
 }
@@ -120,6 +114,7 @@
   border-bottom: 1px solid var(--bt-color, #ff0070);
   width: 25px;
   height: 25px;
+  justify-self: start;
 }
 
 /*main*/
@@ -136,7 +131,7 @@
   font-weight: 700;
   background-color: var(--accent-color, #ff0070);
   color: var(--bg-color, #000028);
-  margin-bottom: 10px;
+  margin-bottom: 31px;
 }
 
 h3 + .title-decor {
@@ -222,3 +217,5 @@ h3 + .title-decor {
   height: 25px;
   justify-self: start;
 }
+
+
