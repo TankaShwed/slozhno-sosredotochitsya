@@ -14,14 +14,14 @@
 }
 
 .header {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 63px 165px 247px 148px;
-    justify-content: space-between;    
-    justify-items: end;
-    min-height: 668px;
-    height: 100vh;
+  padding: 10px; /*2.67vi*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 63px 165px 247px 148px;
+  justify-content: space-between;
+  justify-items: end;
+  min-height: 668px;
+  height: 100vh;
 }
 
 .cover {
@@ -30,9 +30,6 @@
 
 /*лампочка*/
 .header__bulb {
-  /*position: absolute;
-  right: 10px;
-  top: 10px;*/
   display: flex;
   gap: 3px;
 }
@@ -138,7 +135,7 @@ h3 + .title-decor {
   margin-bottom: 20px;
 }
 
-.content__picture > .title-decor {
+.content__pictures > .title-decor {
   margin-bottom: 0px;
 }
 
@@ -159,6 +156,7 @@ h3 + .title-decor {
 
 .content__article:not(:last-of-type) {
   margin-block-end: 50px;
+  margin-block-start: 40px;
 }
 
 /*боковые отступы секции,может убрать?*/
@@ -179,24 +177,26 @@ h3 + .title-decor {
   border: 1px solid var(--text-color, #f1b2ce);
 }
 
-.content__picture {
+.content__pictures {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-block-end: 40px;
 }
 
-.content__picture_picture {
+.content__pictures__picture {
+  font-size: 0px;
+}
+
+.content__pictures__picture_pic {
   inline-size: 100%;
 }
 
 .footer {
-  /*height: 100vh;*/
   min-height: 668px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 277px 346px 25px;
   padding: 2.5%;
 }
 
@@ -217,5 +217,3 @@ h3 + .title-decor {
   height: 25px;
   justify-self: start;
 }
-
-
