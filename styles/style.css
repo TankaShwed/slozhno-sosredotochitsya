@@ -128,8 +128,8 @@
   margin-bottom: 10px;
 }
 
-span.title-decor{
-margin-bottom: 31px;
+span.title-decor {
+  margin-bottom: 31px;
 }
 
 h3 + .title-decor {
@@ -217,4 +217,9 @@ h3 + .title-decor {
   width: 25px;
   height: 25px;
   justify-self: start;
+}
+
+.footer > .header__title {
+  justify-self: center;
+  text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
 }
