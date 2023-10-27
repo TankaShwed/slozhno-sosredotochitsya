@@ -102,9 +102,6 @@
   line-height: 0.825; /*82.5% 95.7px */
 }
 
-.header__text {
-}
-
 .header::after {
   content: "";
   border-left: 1px solid var(--bt-color, #ff0070);
@@ -128,7 +125,11 @@
   font-weight: 700;
   background-color: var(--accent-color, #ff0070);
   color: var(--bg-color, #000028);
-  margin-bottom: 31px;
+  margin-bottom: 10px;
+}
+
+span.title-decor{
+margin-bottom: 31px;
 }
 
 h3 + .title-decor {
@@ -206,7 +207,7 @@ h3 + .title-decor {
   border-top: 1px solid var(--bt-color, #ff0070);
   width: 25px;
   height: 25px;
-  justify-self: start;
+  justify-self: end;
 }
 
 .footer::after {
