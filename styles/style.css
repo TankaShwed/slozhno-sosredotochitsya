@@ -19,7 +19,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: 63px 165px 247px 148px;
   justify-content: space-between;
-  justify-items: end;
   min-height: 668px;
   height: 100vh;
 }
@@ -32,6 +31,7 @@
 .header__bulb {
   display: flex;
   gap: 3px;
+  justify-content: flex-end;
 }
 
 .header__bulb::before {
@@ -222,4 +222,12 @@ h3 + .title-decor {
 .footer > .header__title {
   justify-self: center;
   text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .header {
+    padding: 20px;
+    grid-template-rows: 170px 259px 275px 254px;
+    min-height: 1024px;
+  }
 }
