@@ -161,7 +161,7 @@ h3 + .title-decor {
 
 /*боковые отступы секции,может убрать?*/
 .content-section {
-  padding: 0 2.67vi;
+  padding: 0 20px;
 }
 
 .text-link {
@@ -273,7 +273,7 @@ h3 + .title-decor {
     grid-row-start: 2;
   }
   .content__articles_other > .content__title {
-    grid-area: none;
+    grid-area: auto;
   }
   .content__pictures {
     display: grid;
