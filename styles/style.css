@@ -146,7 +146,6 @@ h3 + .title-decor {
 .content__articles_title {
   color: var(--bg-color, #000028);
   background-color: var(--accent-color, #ff0070);
-  margin: 2.8% 0; /*?*/
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -223,7 +222,7 @@ h3 + .title-decor {
   text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
 }
 
-@media(width >= 768px){
+@media (width >= 768px) {
   .header {
     padding: 20px;
     grid-template-rows: 170px 273px 260px 254px;
@@ -238,7 +237,8 @@ h3 + .title-decor {
     height: 117px;
     justify-self: end;
   }
-  .content__articles:not(:last-of-type), .content__articles_other{
+  .content__articles:not(:last-of-type),
+  .content__articles_other {
     margin-block-start: 60px;
     margin-block-end: 20px;
   }
@@ -246,13 +246,13 @@ h3 + .title-decor {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
-        "a c"
-        "a c"
-        "a c"
-        "a c"
-        "a c"
-        "a c"
-        "a c";
+      "a c"
+      "a c"
+      "a c"
+      "a c"
+      "a c"
+      "a c"
+      "a c";
     grid-auto-rows: min-content;
   }
   .content__title {
@@ -305,7 +305,7 @@ h3 + .title-decor {
   }
 }
 
-@media(width >= 1024px)  {
+@media (width >= 1024px) {
   .header {
     grid-template-rows: 0 300px 243px 160px;
     min-height: 100%;
