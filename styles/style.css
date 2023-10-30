@@ -240,7 +240,7 @@ h3 + .title-decor {
   }
   .content {
     padding: 0 20px;
-    margin-block-end: 59px;
+    margin-block-end: 60px;
   }
   .content__articles_title {
     margin-top: 0px;
@@ -317,6 +317,10 @@ h3 + .title-decor {
   .street {
     grid-column: span 2;
   }
+  .footer{
+    padding-block: 20px;
+    padding-inline: 20px;
+  }
 }
 
 @media (width >= 1024px) {
@@ -338,8 +342,11 @@ h3 + .title-decor {
     flex-direction: row;
   }
   .content__articles_other{
-    padding-left: 8px;
+    grid-gap: 20px;
     grid-template-columns: repeat(3, minmax(315px, max-content));
+  }
+  .content__title{
+    margin-bottom: 0;
   }
   .content__articles_other > .content__title{
     inline-size: 315px;
@@ -347,6 +354,12 @@ h3 + .title-decor {
   }
   .content__articles_other > .content__articles_article{
     grid-column-start: auto;
-    grid-row-start: 3;
+    grid-row-start: 2;
+  }
+  .content__articles_article{
+    padding-left: 7px;
+  }
+  .content__title + .title-decor {
+    margin-left: 7px;
   }
 }
