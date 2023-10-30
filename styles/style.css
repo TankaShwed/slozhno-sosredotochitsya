@@ -235,6 +235,9 @@ h3 + .title-decor {
 }
 
 @media (width >= 768px) {
+  .header::after{
+    margin-left: 20px;
+  }
   .content {
     padding: 0 20px;
     margin-block-end: 59px;
@@ -333,5 +336,17 @@ h3 + .title-decor {
   }
   .header__theme-menu-list {
     flex-direction: row;
+  }
+  .content__articles_other{
+    padding-left: 8px;
+    grid-template-columns: repeat(3, minmax(315px, max-content));
+  }
+  .content__articles_other > .content__title{
+    inline-size: 315px;
+    grid-row: auto;
+  }
+  .content__articles_other > .content__articles_article{
+    grid-column-start: auto;
+    grid-row-start: 3;
   }
 }
