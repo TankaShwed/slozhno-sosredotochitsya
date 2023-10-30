@@ -213,15 +213,16 @@ h3 + .title-decor {
   margin-top: auto;
 }
 
-.footer > .header__title {
+.footer__title {
   justify-self: center;
+  color: var(--title-color, #db00ff);
   text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
 }
 
 .title-decor {
-  background-color: var(--accent-color);
-  color: var(--accent-text-color);
-  font-weight: 700;
+  background-color: var(--accent-color, #ff0070);
+  color: var(--bg-color, #000028);
 }
 
 .content__card-sub-title {
@@ -231,14 +232,11 @@ h3 + .title-decor {
 
 .content__card__title {
   margin-block-end: 10px;
-  /*font-weight: 700;
-  font-size: inherit;*/
+  font-weight: 700;
+  font-size: inherit;
 }
 
 @media (width >= 768px) {
-  .header::after {
-    margin-left: 20px;
-  }
   .content {
     padding: 0 20px;
     margin-block-end: 60px;
@@ -248,17 +246,19 @@ h3 + .title-decor {
     margin-block-end: 10px;
   }
   .header {
-    padding: 20px 20px 20px 0px;
+    padding: 20px;
     grid-template-rows: 170px 273px 260px 254px;
     min-height: 1024px;
   }
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    transform: translateX(-20px);
   }
   .header__title-decor {
     width: 364px;
     height: 117px;
     justify-self: end;
+    font-weight: 700;
   }
   .content__articles:not(:last-of-type),
   .content__articles_other {
@@ -321,6 +321,9 @@ h3 + .title-decor {
   .footer {
     padding-block: 20px;
     padding-inline: 20px;
+  }
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
