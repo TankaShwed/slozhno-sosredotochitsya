@@ -12,12 +12,14 @@
   --bg-color: #fff1f7;
   --title-color: #ffc2e6;
   --text-color: #353430;
+  --title-text-color: #353430;
+  --title-accent-color: #353430;
   --accent-color: #ff8dcb;
   --rec: "";
   --bulb: none;
   --bg-cover: url(../images/cover-image-light.png);
   --bt-color: #353430;
-  --bt-color-shadow: rgba(50, 49, 45, 0.40);
+  --bt-color-shadow: rgba(50, 49, 45, 0.4);
   --bt-color-active: #353430;
 }
 
@@ -26,12 +28,14 @@
     --bg-color: #fff1f7;
     --title-color: #ffc2e6;
     --text-color: #353430;
+    --title-text-color: #353430;
+    --title-accent-color: #353430;
     --accent-color: #ff8dcb;
     --rec: "";
     --bulb: none;
     --bg-cover: url(../images/cover-image-light.png);
     --bt-color: #353430;
-    --bt-color-shadow: rgba(50, 49, 45, 0.40);
+    --bt-color-shadow: rgba(50, 49, 45, 0.4);
     --bt-color-active: #353430;
   }
 }

@@ -116,7 +116,7 @@
 
 /*main*/
 .content__title {
-  color: var(--accent-color, #ff0070);
+  color: var(--title-accent-color, #ff0070);
   margin-bottom: 20px;
   font-size: 18px;
   font-style: normal;
@@ -224,7 +224,7 @@ h3 + .title-decor {
 
 .title-decor {
   background-color: var(--accent-color, #ff0070);
-  color: var(--bg-color, #000028);
+  color: var(--title-text-color, #000028);
 }
 
 .content__card-sub-title {
