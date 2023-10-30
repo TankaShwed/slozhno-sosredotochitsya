@@ -221,6 +221,7 @@ h3 + .title-decor {
 .title-decor {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
+  font-weight: 700;
 }
 
 .content__card-sub-title {
@@ -230,8 +231,8 @@ h3 + .title-decor {
 
 .content__card__title {
   margin-block-end: 10px;
-  font-weight: 700;
-  font-size: inherit;
+  /*font-weight: 700;
+  font-size: inherit;*/
 }
 
 @media (width >= 768px) {
