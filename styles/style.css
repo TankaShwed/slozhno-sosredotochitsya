@@ -126,6 +126,8 @@
 
 .header__title-decor {
   margin-bottom: 31px;
+  justify-self: end;
+  font-weight: 700;
 }
 
 h3 + .title-decor {
@@ -257,8 +259,6 @@ h3 + .title-decor {
   .header__title-decor {
     width: 364px;
     height: 117px;
-    justify-self: end;
-    font-weight: 700;
   }
   .content__articles:not(:last-of-type),
   .content__articles_other {
