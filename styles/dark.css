@@ -22,3 +22,20 @@
   --bt-color-shadow: rgba(255, 0, 112, 0.4);
   --bt-color-active: #ff0070;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --title-color: #db00ff;
+    --text-color: #f1b2ce;
+    --title-text-color: #000028;
+    --title-accent-color: #ff0070;
+    --accent-color: #ff0070;
+    --rec: "rec";
+    --bulb: url(../images/circl.svg);
+    --bg-cover: url(../images/cover-image-dark.png);
+    --bt-color: #ff0070;
+    --bt-color-shadow: rgba(255, 0, 112, 0.4);
+    --bt-color-active: #ff0070;
+  }
+}
