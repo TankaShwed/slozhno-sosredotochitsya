@@ -37,24 +37,21 @@
   text-transform: uppercase;
   color: var(--accent-color, #ff0070);
   line-height: 25px;
-}
-
-.content__block_other {
-  margin-block-end: 50px;
+  margin-right: 28px;
 }
 
 .header__bulb::after {
   content: "";
-  border-top: 1px solid var(--bt-color, #ff0070);
-  border-right: 1px solid var(--bt-color, #ff0070);
-  width: 25px;
-  height: 25px;
-  display: block;
-  position: relative;
-  background-image: var(--bulb, url(../images/circl.svg));
-  /* background-color: var(--bt-color, #ff0070);
-  border-radius: 50%;
-  filter: drop-shadow(0px 0px 5px var(--bt-color, #ff0070))*/
+    position: absolute;
+    vertical-align: middle;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: #ff0070;
+    box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+    margin: 8px 8px 0 10px;
+    display: var(--bulb);
 }
 
 /*nav-bar*/
@@ -109,16 +106,29 @@
   line-height: 0.825; /*82.5% 95.7px */
 }
 
-.header::after {
+.decorated-zone::before {
+  content: "";
+  border-right: 1px solid var(--bt-color, #ff0070);
+  border-top: 1px solid var(--bt-color, #ff0070);
+  width: 25px;
+  height: 25px;
+  justify-self: end;
+}
+
+.header::before {
+  position: absolute;
+}
+
+.decorated-zone::after {
   content: "";
   border-left: 1px solid var(--bt-color, #ff0070);
   border-bottom: 1px solid var(--bt-color, #ff0070);
   width: 25px;
   height: 25px;
+  margin-top: auto;
 }
 
 .header__title-decor {
-
   justify-self: end;
   font-weight: 700;
   line-height: 23.4px;
@@ -156,6 +166,10 @@ h2 + .title-decor,
 
 .content {
   padding: 0 10px;
+}
+
+.content__block-other {
+  margin-block-end: 50px;
 }
 
 .text-link {
@@ -199,24 +213,6 @@ h2 + .title-decor,
   grid-template-rows: 1fr auto 1fr;
   block-size: 100vh;
   padding: 2.5%;
-}
-
-.footer::before {
-  content: "";
-  border-right: 1px solid var(--bt-color, #ff0070);
-  border-top: 1px solid var(--bt-color, #ff0070);
-  width: 25px;
-  height: 25px;
-  justify-self: end;
-}
-
-.footer::after {
-  content: "";
-  border-left: 1px solid var(--bt-color, #ff0070);
-  border-bottom: 1px solid var(--bt-color, #ff0070);
-  width: 25px;
-  height: 25px;
-  margin-top: auto;
 }
 
 .footer__title {

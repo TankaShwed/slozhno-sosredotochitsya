@@ -8,7 +8,7 @@
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --rec: "rec";
-  --bulb: url(../images/circl.svg);
+  --bulb: block;
   --bg-cover: url(../images/cover-image-dark.png);
   --bt-color: #ff0070;
   --bt-color-shadow: rgba(255, 0, 112, 0.4);
