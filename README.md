@@ -1,4 +1,3 @@
-# slozhno-sosredotochitsya
-Проект "Сложно сосредоточиться"
+# Проектная работа "Сложно сосредоточиться"
 
-https://github.com/TankaShwed/slozhno-sosredotochitsya
+Страница на GitHub Pages [ссылка]([https://tankashwed.github.io/mesto-project-ff/](https://tankashwed.github.io/slozhno-sosredotochitsya/)).
